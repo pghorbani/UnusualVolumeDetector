@@ -27,7 +27,7 @@ class mainObj:
         pass
 
     def getData(self, ticker):
-        global MONTH_CUTOFF
+        global MONTH_CUTTOFF
         currentDate = datetime.date.today() + datetime.timedelta(days=1)
         pastDate = currentDate - \
             dateutil.relativedelta.relativedelta(months=MONTH_CUTTOFF)
